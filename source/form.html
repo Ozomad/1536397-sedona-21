@@ -42,8 +42,8 @@
         <section class="review-author">
           <div class="review-author__wrapper">
             <h2 class="visually-hidden">Информация о госте</h2>
-            <p class="review-author__title">Представьтесь:</p>
             <fieldset class="review-author__name">
+              <legend class="review-author__title">Представьтесь:</legend>
               <label for="first-name" class="review-author__first-name-label required">Имя</label>
               <input type="text" class="author-first-name" id="first-name" name="first-name" value="Петр" required>
               <label for="second-name" class="review-author__second-name-label required">Фамилия</label>
@@ -56,8 +56,8 @@
         <section class="author-contact">
           <div class="author-contact__wrapper">
             <h2 class="visually-hidden">Контакты гостя</h2>
-            <p class="author-contact__title">Контактная информация:</p>
             <fieldset class="author-contact__contacts">
+              <legend class="author-contact__title">Контактная информация:</legend>
               <label for="phone" class="author-contact__phone-label required">Контактный телефон</label>
               <input type="text" class="author-phone" id="phone" name="phone" value="Введите телефон" required>
               <label for="email" class="author-contact__email-label required">Электронная почта</label>
@@ -68,8 +68,8 @@
         <section class="impress">
           <div class="impress__wrapper">
             <h2 class="visually-hidden">Впечатление гостя</h2>
-            <p class="impress__title">Ваше общее впечатление:</p>
             <fieldset class="impress__list">
+              <legend class="impress__title">Ваше общее впечатление:</legend>
               <ul>
                 <li class="impress__item ">
                   <input type="radio" name="impress-good" checked>Скорее положительное
@@ -87,8 +87,8 @@
         <section class="attraction">
           <div class="attraction__wrapper">
             <h2 class="visually-hidden">Достопримечательности</h2>
-            <p class="attraction__title">Посещенные достопримечательности:</p>
             <fieldset class="attraction__list">
+              <legend class="attraction__title">Посещенные достопримечательности:</legend>
               <ul>
                 <li class="attraction__item attraction__item--checked">
                   <input type="checkbox" name="bridge" checked>Мост дьявола
@@ -106,9 +106,38 @@
             </fieldset>
           </div>
         </section>
-
+        <section class="emotion">
+          <h2 class="visually-hidden">Эмоции</h2>
+          <fieldset class="emotion__text">
+            <legend class="emotion__title">Опишите ваши эмоции</legend>
+            <textarea name="emotion-detail" rows="8" cols="40"></textarea>
+          </fieldset>
+        </section>
+        <button type="button review-button" name="button" type="submit">Отправить отзыв</button>
       </form>
-
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">
+          <p class="page-footer__hashtag">#VISITSEDONA</p>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--YouTube" href="https://www.youtube.com"></a>
+            </li>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
