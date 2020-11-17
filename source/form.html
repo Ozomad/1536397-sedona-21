@@ -14,7 +14,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">Фото и видео</a>
@@ -31,14 +31,44 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Сайт городка Sedona</h1>
-      <section class="billboard">
-        <div class="billboard__wrapper">
-          <h2 class="visually-hidden">Рекламный щит городка Sedona</h2>
-          <img class="billboard__image" src="https://via.placeholder.com/320x158" width="320" height="158" alt="Добро пожаловать в городок SEDONA">
-          <p class="billboard__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="billboard__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <section class="review">
+        <div class="review__wrapper">
+          <h2 class="visually-hidden">Отзывы гостей</h2>
+          <p class="review__title">Оставьте свой отзыв</p>
+          <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
+      <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
+        <section class="review-author">
+          <div class="review-author__wrapper">
+            <h2 class="visually-hidden">Информация о госте</h2>
+            <p class="review-author__title">Представьтесь</p>
+            <fieldset class="review-author__name">
+              <label for="first-name" class="review-author__first-name-label required">Имя</label>
+              <input type="text" class="author-first-name" id="first-name" name="first-name" value="Петр" required>
+              <label for="second-name" class="review-author__second-name-label required">Фамилия</label>
+              <input type="text" class="author-second-name" id="second-name" name="second-name" value="Иванов" required>
+              <label for="middle-name" class="review-author__middle-name-label ">Отчество</label>
+              <input type="text" class="author-middle-name" id="middle-name" name="middle-name" value="Александрович" >
+            </fieldset>
+          </div>
+        </section>
+        <section class="review-contact">
+          <div class="review-contact__wrapper">
+            <h2 class="visually-hidden">Контакты гостя</h2>
+            <p class="review-contact__title">Контактная информация</p>
+            <fieldset class="review-contact__contacts">
+              <label for="phone" class="review-contact__phone-label required">Контактный телефон</label>
+              <input type="text" class="author-phone" id="phone" name="phone" value="Введите телефон" required>
+              <label for="email" class="review-contact__email-label required">Электронная почта</label>
+              <input type="text" class="author-email" id="email" name="email" value="Введите e-mail" required>
+            </fieldset>
+          </div>
+
+        </section>
+
+      </form>
+
     </main>
   </body>
 </html>
