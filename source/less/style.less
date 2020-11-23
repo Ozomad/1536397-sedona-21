@@ -1,10 +1,12 @@
 // Начните писать стили здесь
+@import "./fonts.less";
+@import "./colors.less";
 @import "./page__body.less";
 @import "./page-header.less";
-@import "./colors.less";
-@import "./fonts.less";
 @import "./main-nav.less";
 @import "./site-list.less";
+@import "./billboard.less";
+@import "./advantages.less";
 
 .visually-hidden{
   /*visibility: hidden;*/
@@ -13,4 +15,15 @@
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+.title-font(){
+  .pt-sans__bold();
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.text-font(){
+  .pt-sans__regular();
+  font-size: 14px;
+  line-height: 21px;
 }
