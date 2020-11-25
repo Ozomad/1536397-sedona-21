@@ -1,6 +1,7 @@
 // Начните писать стили здесь
 @import "./fonts.less";
 @import "./colors.less";
+@import "./common.less";
 @import "./page.less";
 @import "./page-header.less";
 @import "./main-nav.less";
@@ -8,42 +9,3 @@
 @import "./billboard.less";
 @import "./advantages.less";
 @import "./page-footer.less";
-
-
-.visually-hidden{
-  /*visibility: hidden;*/
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-.pt-sans__bold() {
-//  font-family: "PT Sans", "Arial", sans-serif;
-//  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.pt-sans__regular() {
-//  font-family: "PT Sans", "Arial", sans-serif;
-//  font-style: normal;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.title-font(){
-  .pt-sans__bold();
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.text-font(){
-  .pt-sans__regular();
-  font-size: 14px;
-  line-height: 21px;
-}
-.button-font{
-  font-size: 21px;
-  line-height: 26px;
-  .pt-sans__bold();
-}
