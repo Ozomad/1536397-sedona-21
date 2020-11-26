@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -33,14 +34,13 @@
       <h1 class="visually-hidden">Фото и видео городка Sedona</h1>
       <section class="photo-video">
         <div class="photo-video__wrapper">
-          <h2 class="visually-hidden">Фото и видео</h2>
-          <p class="photo-video__title">Фото и видео</p>
+          <h2 class="photo-video__title">Фото и видео</h2>
           <p class="photo-video__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
         </div>
       </section>
       <section class="gallery">
         <div class="gallery__wrapper">
-          <h2 class="visually-hidden">галерея фото и видео</h2>
+          <h2 class="visually-hidden">галерея фото</h2>
           <div class="gallery__item">
             <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Неродные просторы">
             <p class="gallery__text">Неродные просторы</p>
@@ -65,16 +65,21 @@
             <p class="gallery__author">Автор фото: Антон</p>
             <p class="gallery__like">254</p>
           </div>
-          <div class="gallery__item">
-            <p class="gallery__title-video">Все еще сомневаетесь?</p>
-            <p class="gallery__text-video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+      </section>
+      <section class="video">
+        <div class="video__wrapper">
+          <h2 class="visually-hidden">видеопрезентация</h2>
+          <div class="video__item">
+            <p class="video__title">Все еще сомневаетесь?</p>
+            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             <video width="320" height="200" controls="controls" poster="https://via.placeholder.com/320x200">
-              <source src="video/road.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                Тег video не поддерживается вашим браузером.
-                <a href="road/duel.mp4">Скачайте видео</a>.
-              </div>
-            </div>
-          </section>
+            <source src="video/road.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            Тег video не поддерживается вашим браузером.
+            <a href="road/duel.mp4">Скачайте видео</a>.
+          </div>
+        </div>
+      </section>
     </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
