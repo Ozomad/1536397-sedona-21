@@ -35,8 +35,8 @@
       <section class="review">
         <div class="review__wrapper">
           <h2 class="visually-hidden">Отзывы гостей</h2>
-          <p class="review__title">Оставьте свой отзыв</p>
-          <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="review__title form-title-font">Оставьте свой отзыв</p>
+          <p class="review__text form-text-font">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
       <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
@@ -44,13 +44,13 @@
           <div class="review-form__wrapper">
             <h2 class="visually-hidden">Информация о госте</h2>
             <fieldset class="review-form__name">
-              <legend class="review-form__legend">Представьтесь:</legend>
-              <label for="first-name" class="review-form__label required">Имя</label>
-              <input type="text" class="review-form__input" id="first-name" name="first-name" value="Петр" required>
-              <label for="second-name" class="review-form__label required">Фамилия</label>
-              <input type="text" class="review-form__input" id="second-name" name="second-name" value="Иванов" required>
-              <label for="middle-name" class="review-form__label ">Отчество</label>
-              <input type="text" class="review-form__input" id="middle-name" name="middle-name" value="Александрович" >
+              <legend class="review-form__legend form-title-font">Представьтесь:</legend>
+              <label for="first-name" class="review-form__label required form-label-font">Имя*:</label>
+              <input type="text" class="review-form__input form-title-font" id="first-name" name="first-name" value="Петр" required>
+              <label for="second-name" class="review-form__label required form-label-font">Фамилия*:</label>
+              <input type="text" class="review-form__input form-title-font" id="second-name" name="second-name" value="Иванов" required>
+              <label for="middle-name" class="review-form__label form-label-font ">Отчество:</label>
+              <input type="text" class="review-form__input form-title-font" id="middle-name" name="middle-name" value="Александрович" >
             </fieldset>
           </div>
         </section>
@@ -58,11 +58,11 @@
           <div class="review-form__wrapper">
             <h2 class="visually-hidden">Контакты гостя</h2>
             <fieldset class="review-form__fieldset">
-              <legend class="review-form__legend">Контактная информация:</legend>
-              <label for="phone" class="review-form__label required">Контактный телефон</label>
-              <input type="text" class="review-form__input" id="phone" name="phone" value="Введите телефон" required>
-              <label for="email" class="review-form__label required">Электронная почта</label>
-              <input type="text" class="review-form__input" id="email" name="email" value="Введите e-mail" required>
+              <legend class="review-form__legend form-title-font">Контактная информация:</legend>
+              <label for="phone" class="review-form__label required form-label-font">Контактный телефон*:</label>
+              <input type="text" class="review-form__input form-title-font" id="phone" name="phone" value="Введите телефон" required>
+              <label for="email" class="review-form__label required form-label-font">Электронная почта *:</label>
+              <input type="text" class="review-form__input form-title-font" id="email" name="email" value="Введите e-mail" required>
             </fieldset>
           </div>
         </section>
@@ -70,9 +70,9 @@
           <div class="review-form__wrapper">
             <h2 class="visually-hidden">Впечатление гостя</h2>
             <fieldset class="review-form__fieldset">
-              <legend class="review-form__legend">Ваше общее впечатление:</legend>
-              <ul class="review-form__list">
-                <li class="review-form__item ">
+              <legend class="review-form__legend form-title-font">Ваше общее впечатление:</legend>
+              <ul class="review-form__list text-normal form-title-font clear">
+                <li class="review-form__item  ">
                   <input type="radio" name="impress" value="good" checked>Скорее положительное
                 </li>
                 <li class="review-form__item">
@@ -89,8 +89,8 @@
           <div class="review-form__wrapper">
             <h2 class="visually-hidden">Достопримечательности</h2>
             <fieldset class="review-form__fieldset">
-              <legend class="review-form__legend">Посещенные достопримечательности:</legend>
-              <ul class="review-form__list">
+              <legend class="review-form__legend form-title-font">Посещенные достопримечательности:</legend>
+              <ul class="review-form__list form-title-font text-normal clear">
                 <li class="review-form__item review-form__item--checked">
                   <input type="checkbox" name="bridge" checked>Мост дьявола
                 </li>
@@ -107,14 +107,14 @@
             </fieldset>
           </div>
         </section>
-        <section class="review-form__section">
+        <section class="review-form__section form-title-font">
           <h2 class="visually-hidden">Эмоции</h2>
-          <fieldset class="review-form__fieldset">
-            <legend class="review-form__legend">Опишите ваши эмоции</legend>
-            <textarea name="review-form__textarea" rows="8" cols="40"></textarea>
+          <fieldset class="review-form__fieldset ">
+            <legend class="review-form__legend ">Опишите ваши эмоции</legend>
+            <textarea class="review-form__textarea "name="review-form__textarea" rows="8" cols="40">Опишите подробно все свои восторги </textarea>
           </fieldset>
         </section>
-        <button type="button review-form__button" name="button" type="submit">Отправить отзыв</button>
+        <button class="button review-form__button" type="button" name="button" type="submit">Отправить отзыв</button>
       </form>
     </main>
     <footer class="page-footer">
