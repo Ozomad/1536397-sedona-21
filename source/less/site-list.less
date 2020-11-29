@@ -9,3 +9,23 @@
   color: @basic-white;
   .clear;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: @basic-white;
+  }
+  .site-list__item a {
+    color:@basic-black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 1040px;
+  }
+}
