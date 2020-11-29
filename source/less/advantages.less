@@ -33,3 +33,34 @@
 .recommendation__text {
   color: @basic-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    width: 80%;
+  }
+  .advantages__list {
+    // display: flex;
+    // flex-wrap:wrap;
+    display: grid;
+    grid-template-areas:
+    "white img img"
+    "black black black"
+    "img img white"
+    "grey grey grey";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .advantages__item--white {
+    grid-area: white;
+  }
+  .advantages__item--img {
+    grid-area: img;
+  }
+  .recommendation {
+    grid-area: black;
+  }
+  .advantages__item--grey {
+    grid-area: grey;
+  }
+
+}
