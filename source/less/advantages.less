@@ -1,3 +1,7 @@
+.advantages__item {
+  outline-offset: -5px;
+outline: 5px solid rgba(255, 0, 0, 0.7);
+}
 
 .advantages__list {
   .clear;
@@ -36,31 +40,44 @@
 
 @media (min-width: @tablet-width) {
   .advantages__wrapper {
-    width: 80%;
+    width: 99%;
   }
-  .advantages__list {
-    // display: flex;
-    // flex-wrap:wrap;
-    display: grid;
-    grid-template-areas:
-    "white img img"
-    "black black black"
-    "img img white"
-    "grey grey grey";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+   .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33%;
   }
-  .advantages__item--white {
-    grid-area: white;
-  }
-  .advantages__item--img {
-    grid-area: img;
-  }
-  .recommendation {
-    grid-area: black;
-  }
-  .advantages__item--grey {
-    grid-area: grey;
+  .advantages__item {
+    width: 250px;
   }
 
+  .advantages__item--img {
+    width: 512px;
+  }
+
+  .recommendation {
+    width: 250px;
+  }
+  //   display: grid;
+  //   grid-template-areas:
+  //   "white img img"
+  //   "black black black"
+  //   "img img white"
+  //   "grey grey grey";
+  //   grid-template-columns: 1fr 1fr 1fr;
+  //   grid-template-rows: 1fr 1fr 1fr 1fr;
+  //
+
+  // .advantages__item--white {
+  //   grid-area: white;
+  // }
+  // .advantages__item--img {
+  //   grid-area: img;
+  // }
+  // .recommendation {
+  //   grid-area: black;
+  // }
+  // .advantages__item--grey {
+  //   grid-area: grey;
+  // }
 }
