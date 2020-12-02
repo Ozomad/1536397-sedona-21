@@ -19,9 +19,16 @@
   text-decoration: none;
 }
 
-@media (min-width: @tablet-width) {
-  .page-footer__wrapper {
+
+.page-footer__wrapper {
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    width: var(--tablet-width);
+  }
+  @media (min-width: @desktop-width) {
+    width: var(--desktop-width);
   }
 }
