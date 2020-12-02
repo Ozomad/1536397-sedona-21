@@ -2,6 +2,15 @@
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-style: normal;
-  background-color: @basic-white;
+  background-color: @background-body;
   text-transform: uppercase;
+}
+
+.page__container {
+  background-color: @basic-white;
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
 }
