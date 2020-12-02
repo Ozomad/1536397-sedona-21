@@ -3,30 +3,33 @@
   line-height: 40px;
   background-color: @background-blue;
   .clear;
-}
 
-.site-list__item a {
-  color: @basic-white;
-  .clear;
-}
-
-@media (min-width: @tablet-width) {
-  .site-list {
+  @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80%;
     font-size: 14px;
     line-height: 26px;
     background-color: @basic-white;
   }
+}
 
-  .site-list__item a {
-    color: @basic-black;
+.site-list__item {
+  @media (min-width: @tablet-width) {
+    width: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 239px;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .site-list {
-    //width: 1040px;
+.site-list__item a {
+  color: @basic-white;
+  .clear;
+
+  @media (min-width: @tablet-width) {
+    color: @basic-black;
   }
+
 }
