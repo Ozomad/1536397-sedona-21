@@ -6,20 +6,25 @@
 .billboard__wrapper {
   margin: 0 auto;
 //  height: 615px;
-  width: var(--mobile-billboard-width);
+  width: var(--mobile-width);
 
   @media (min-width: @tablet-width) {
-    width: var(--tablet-billboard-width);
+    width: var(--tablet-width);
     }
 }
 
 .billboard__title {
   font-size: 18px;
-  padding: var(--mobile-billboard-padding);
+  padding: var(--mobile-padding);
+
+  @media(min-width: @tablet-width) {
+    font-size: 21px;
+    }
 }
 
 .billboard__text {
   font-weight: 400;
   font-size: 14px;
   color: @basic-grey;
+  padding: var(--mobile-padding);
 }
