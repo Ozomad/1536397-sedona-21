@@ -1,31 +1,90 @@
+.advantages__row {
+  outline: 3px solid rgba(255, 0, 0, 0.7);
+}
+
+.advantages__item,
+.advantages__item--img,
+.recommendation {
+  outline-offset: -2px;
+  outline: 2px solid rgba(0, 255, 0, 0.7);
+}
+
+.advantages__wrapper {
+  margin: 0 auto;
+  width: var(--mobile-width);
+
+  @media (min-width: @tablet-width) {
+    width: var(--tablet-width);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: var(--desktop-width);
+  }
+}
+
+.advantages__item--white,
+.advantages__item--grey {
+  width: var(--mobile-width);
+  height: 191px;
+
+  @media (min-width: @tablet-width) {
+    width: var(--tablet-text-width);
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: var(--desktop-text-width);
+  }
+}
+
+.advantages__item--img {
+  width: var(--mobile-width);
+  height: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: var(--tablet-img-width);
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: var(--desktop-img-width);
+  }
+}
+
+.recommendation {
+  width: var(--mobile-width);
+  height: 139px;
+
+  @media (min-width: @tablet-width) {
+    width: var(--tablet-text-width);
+    height: 330px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: var(--desktop-text-width);
+  }
+}
 
 .advantages__list {
   .clear;
 }
 
-.advantages__item--white {
-  color: @basic-white;
-  background-color: @background-blue;
-}
-
-.advantages__title {
-  font-weight: 700;
+.advantages__title,
+.recommendation__title {
   font-size: 18px;
   line-height: 26px;
-  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
-.advantages__number {
-  font-weight: 400;
+.advantages__number,
+.advantages__text,
+.recommendation__text {
   font-size: 14px;
   line-height: 21px;
-}
-
-.advantages__text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  margin: 0;
 }
 
 .advantages__item--grey {
@@ -36,15 +95,34 @@
   }
 }
 
-.recommendation__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
+.advantages__item--white {
+  color: @basic-white;
+  background-color: @background-blue;
 }
 
 .recommendation__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
   color: @basic-grey;
+}
+
+
+@media (min-width: @tablet-width) {
+  // .advantages__wrapper {
+  //   width: 90%;
+  // }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantages__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages__row--reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }

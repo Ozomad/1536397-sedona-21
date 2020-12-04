@@ -1,13 +1,36 @@
-.billboard__title {
-  font-weight: 700;
-  font-size: 18px;
+.billboard {
   line-height: 26px;
   color: @basic-black;
+}
+
+.billboard__wrapper {
+  margin: 0 auto;
+  width: var(--mobile-width);
+
+  @media (min-width: @tablet-width) {
+    width: var(--tablet-width);
+  }
+}
+
+.billboard__title {
+  font-size: 18px;
+  padding: var(--mobile-padding);
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .billboard__text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 26px;
   color: @basic-grey;
+  padding: var(--mobile-padding);
+}
+
+.billboard__image {
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }
