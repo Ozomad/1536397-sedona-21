@@ -5,6 +5,11 @@
   background-color: @background-body;
   text-transform: uppercase;
   margin: 0 auto;
+  @media (min-width: @desktop-width) {
+
+    padding: 0 40px ;
+
+  }
 }
 
 .page__container {
@@ -18,7 +23,7 @@
   }
   @media (min-width: @desktop-width) {
     width: 1200px;
-    padding: 0 20px ;
+    //padding: 0 20px ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 }

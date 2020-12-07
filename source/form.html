@@ -67,10 +67,12 @@
               <h2 class="visually-hidden">Контакты гостя</h2>
               <fieldset class="review-form__fieldset">
                 <legend class="review-form__legend ">Контактная информация:</legend>
-                <label for="phone" class="review-form__label required">Контактный телефон*:</label>
-                <input type="text" class="review-form__input " id="phone" name="phone" value="Введите телефон" required>
-                <label for="email" class="review-form__label required">Электронная почта *:</label>
-                <input type="text" class="review-form__input" id="email" name="email" value="Введите e-mail" required>
+                <div class="review-form__column">
+                  <label for="phone" class="review-form__label required">Контактный телефон*:</label>
+                  <input type="text" class="review-form__input " id="phone" name="phone" value="Введите телефон" required>
+                  <label for="email" class="review-form__label required">Электронная почта *:</label>
+                  <input type="text" class="review-form__input" id="email" name="email" value="Введите e-mail" required>
+                </div>
               </fieldset>
             </div>
           </section>
@@ -79,7 +81,7 @@
               <h2 class="visually-hidden">Впечатление гостя</h2>
               <fieldset class="review-form__fieldset">
                 <legend class="review-form__legend ">Ваше общее впечатление:</legend>
-                <ul class="review-form__list clear">
+                <ul class="review-form__list review-form__column clear">
                   <li class="review-form__item">
                     <input type="radio" name="impress" value="good" checked>Скорее положительное
                   </li>
@@ -98,7 +100,7 @@
               <h2 class="visually-hidden">Достопримечательности</h2>
               <fieldset class="review-form__fieldset">
                 <legend class="review-form__legend">Посещенные достопримечательности:</legend>
-                <ul class="review-form__list clear">
+                <ul class="review-form__list review-form__column clear">
                   <li class="review-form__item review-form__item--checked">
                     <input type="checkbox" name="bridge" checked>Мост дьявола
                   </li>
