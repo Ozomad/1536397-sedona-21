@@ -1,6 +1,21 @@
+.photo-video__wrapper {
+  outline: 3px solid rgba(255, 0, 0, 0.7);
+
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    padding: 0 17px;
+  }
+}
+
 .photo-video__title {
   font-size: 18px;
   line-height: 26px;
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .photo-video__text {
