@@ -42,8 +42,8 @@
           </div>
         </section>
         <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
-          <section class="review-form__section">
-            <div class="review-form__wrapper">
+          <section class="review-form__section review-form__section--info">
+            <div class="review-form__wrapper ">
               <h2 class="visually-hidden">Информация о госте</h2>
               <fieldset class="review-form__fieldset">
                 <legend class="review-form__legend">Представьтесь:</legend>
@@ -62,12 +62,12 @@
               </fieldset>
             </div>
           </section>
-          <section class="review-form__section">
-            <div class="review-form__wrapper">
+          <section class="review-form__section review-form__section--contacts">
+            <div class="review-form__wrapper ">
               <h2 class="visually-hidden">Контакты гостя</h2>
               <fieldset class="review-form__fieldset">
                 <legend class="review-form__legend ">Контактная информация:</legend>
-                <div class="review-form__column">
+                <div class="review-form__column review-form__column--contacts">
                   <label for="phone" class="review-form__label required">Контактный телефон*:</label>
                   <input type="text" class="review-form__input " id="phone" name="phone" value="Введите телефон" required>
                   <label for="email" class="review-form__label required">Электронная почта *:</label>
@@ -76,8 +76,8 @@
               </fieldset>
             </div>
           </section>
-          <section class="review-form__section">
-            <div class="review-form__wrapper">
+          <section class="review-form__section review-form__section--review">
+            <div class="review-form__wrapper ">
               <h2 class="visually-hidden">Впечатление гостя</h2>
               <fieldset class="review-form__fieldset">
                 <legend class="review-form__legend ">Ваше общее впечатление:</legend>
@@ -95,8 +95,8 @@
               </fieldset>
             </div>
           </section>
-          <section class="review-form__section">
-            <div class="review-form__wrapper">
+          <section class="review-form__section review-form__section--sight">
+            <div class="review-form__wrapper ">
               <h2 class="visually-hidden">Достопримечательности</h2>
               <fieldset class="review-form__fieldset">
                 <legend class="review-form__legend">Посещенные достопримечательности:</legend>
@@ -117,12 +117,14 @@
               </fieldset>
             </div>
           </section>
-          <section class="review-form__section">
-            <h2 class="visually-hidden">Эмоции</h2>
-            <fieldset class="review-form__fieldset ">
-              <legend class="review-form__legend ">Опишите ваши эмоции</legend>
-              <textarea class="review-form__textarea "name="review-form__textarea" rows="8" cols="40">Опишите подробно все свои восторги </textarea>
-            </fieldset>
+          <section class="review-form__section review-form__section--emotion">
+            <div class="review-form__wrapper ">
+              <h2 class="visually-hidden">Эмоции</h2>
+              <fieldset class="review-form__fieldset ">
+                <legend class="review-form__legend ">Опишите ваши эмоции</legend>
+                <textarea class="review-form__textarea "name="review-form__textarea" rows="8" cols="40">Опишите подробно все свои восторги </textarea>
+              </fieldset>
+            </div>
           </section>
           <button class="button review-form__button" type="button" name="button" type="submit">Отправить отзыв</button>
         </form>
@@ -150,7 +152,6 @@
           </div>
         </div>
       </footer>
-
     </div>
   </body>
 </html>
