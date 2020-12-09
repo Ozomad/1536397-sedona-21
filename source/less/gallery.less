@@ -1,6 +1,28 @@
+.gallery__wrapper {
+  outline: 2px solid rgba(0, 255, 0, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .gallery__item {
   font-size: 14px;
   line-height: 24px;
+  outline: 2px solid rgba(0, 0, 255, 0.7);
+
+  @media (min-width: @tablet-width) {
+    &--full {
+      flex-basis: 100%;
+    }
+    &--part {
+      flex-basis: 50%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--part {
+      flex-basis: 33%;
+    }
+  }
 }
 
 .gallery__author {
