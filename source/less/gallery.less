@@ -28,7 +28,37 @@
   }
 }
 
+.gallery__item-caption {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 20px;
+    background-color: @background-caption;
+  }
+}
+
+.gallery__item-caption-col {
+  text-align: left;
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
+  outline: 2px solid rgba(0, 255, 255, 0.7);
+}
+
 .gallery__author {
   font-weight: 400;
   text-transform: none;
+}
+
+.gallery__like {
+  text-align: right;
 }
