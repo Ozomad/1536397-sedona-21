@@ -11,22 +11,30 @@
 
 .social__list {
   .clear;
+  display: flex;
 }
 
 .social__link {
   background-color: @background-blue;
   color: @basic-white;
   text-decoration: none;
+  margin: 10px;
 }
 
 
 .page-footer__wrapper {
   margin: 0 auto;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
   }
 
   // @media (min-width: @desktop-width) {
