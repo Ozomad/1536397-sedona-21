@@ -2,6 +2,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .page-header__logo {
@@ -10,6 +11,13 @@
 
   @media (min-width: @tablet-width) {
     order: 0;
+    position: absolute;
+    width: 138px;
+    height: 84px;
+    left: 332px;
+    top: 0;
+    z-index: 2;
+
   }
 
   @media (min-width: @desktop-width) {
