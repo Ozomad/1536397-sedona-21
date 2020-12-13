@@ -15,6 +15,16 @@
 }
 
 .site-list__item {
+  border-top: 1px solid @border-blue-dark;
+  border-bottom: 1px solid @border-blue-light;
+
+  &:hover {
+    background-color: @background-blue-dark;
+  }
+  &:active {
+    background-color: @background-blue-darkness;
+  }
+
   @media (min-width: @tablet-width) {
     width: 153px;
   }

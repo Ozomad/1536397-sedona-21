@@ -67,6 +67,7 @@
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: 0;
+  height: 40px;
   background-color: @background-blue;
 
   &::before,
@@ -82,15 +83,19 @@
 
   &::before {
     transform: rotate(45deg);
-    box-shadow: none;
   }
 
   &::after {
     transform: rotate(-45deg);
   }
 
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(@basic-white, 60%);
+  }
+
   &:active::before,
   &:active::after {
-    background-color: fade(#ffffff, 30%);
+    background-color: fade(@basic-white, 30%);
   }
 }
