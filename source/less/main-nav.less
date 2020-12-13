@@ -1,3 +1,8 @@
+.main-nav {
+  min-height: 56px;
+  position: relative;
+}
+
 .main-nav__wrapper {
   margin: 0 auto;
 
@@ -8,6 +13,25 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
+  bottom: -56px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 63px;
+  height: 56px;
+  background-color: @basic-white;
+  color: @background-blue;
+  cursor: pointer;
+  border: solid green;//временно, чтобы кнопку обозначить
+
+  &:active {
+  opacity: 30%;
+  }
+  &:hover {
+  opacity: 60%;
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
