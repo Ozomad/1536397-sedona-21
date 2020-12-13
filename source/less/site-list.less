@@ -15,16 +15,6 @@
 }
 
 .site-list__item {
-  border-top: 1px solid @border-blue-dark;
-  border-bottom: 1px solid @border-blue-light;
-
-  &:hover {
-    background-color: @background-blue-dark;
-  }
-  &:active {
-    background-color: @background-blue-darkness;
-  }
-
   @media (min-width: @tablet-width) {
     width: 153px;
   }
@@ -35,8 +25,24 @@
 }
 
 .site-list__item a {
+  position: relative;
+  display: block;
   color: @basic-white;
   .clear;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 7px  0;
+    border-top: 1px solid @border-blue-dark;
+    border-bottom: 1px solid @border-blue-light;
+
+    &:hover {
+      background-color: @background-blue-dark;
+    }
+    &:active {
+      background-color: @background-blue-darkness;
+      color: fade(@basic-white, 30%);
+    }
+  }
 
   @media (min-width: @tablet-width) {
     color: @basic-black;

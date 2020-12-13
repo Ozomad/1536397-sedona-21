@@ -3,7 +3,7 @@
 }
 
 .main-nav {
-  min-height: 56px;
+//  min-height: 56px;
   position: relative;
 }
 
@@ -25,10 +25,9 @@
   width: 63px;
   height: 56px;
   padding: 0px;
-  //background-color: @basic-white;
-  //color: @background-blue;
   cursor: pointer;
-  border: 1px solid green;//временно, чтобы кнопку обозначить
+  border: 0;
+  //border: 1px solid green;//временно, чтобы кнопку обозначить
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -64,8 +63,18 @@
     0 18px 0 0 fade(@background-blue, 30%);
 }
 
+.main-nav--closed .site-list__item {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
 .main-nav--opened .main-nav__toggle {
-  top: 0;
+  top: 7px;
   right: 0;
   height: 40px;
   background-color: @background-blue;
