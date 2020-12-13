@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .main-nav {
   min-height: 56px;
   position: relative;
@@ -20,19 +24,73 @@
   display: block;
   width: 63px;
   height: 56px;
-  background-color: @basic-white;
-  color: @background-blue;
+  padding: 0px;
+  //background-color: @basic-white;
+  //color: @background-blue;
   cursor: pointer;
-  border: solid green;//временно, чтобы кнопку обозначить
-
-  &:active {
-  opacity: 30%;
-  }
-  &:hover {
-  opacity: 60%;
-  }
+  border: 1px solid green;//временно, чтобы кнопку обозначить
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-color: @basic-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    width: 23px;
+    height: 4px;
+    background-color: @background-blue;
+    box-shadow: 0 9px 0 0 @background-blue, 0 18px 0 0 @background-blue;
+  }
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: fade(@background-blue, 60%);
+  box-shadow:
+    0 9px 0 0 fade(@background-blue, 60%),
+    0 18px 0 0 fade(@background-blue, 60%);
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(@background-blue, 30%);
+  box-shadow:
+    0 9px 0 0 fade(@background-blue, 30%),
+    0 18px 0 0 fade(@background-blue, 30%);
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+  background-color: @background-blue;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    width: 23px;
+    height: 4px;
+    background-color: @basic-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
   }
 }
